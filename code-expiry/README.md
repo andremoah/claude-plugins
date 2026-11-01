@@ -10,18 +10,7 @@ AI agents write temporary code fast. A fallback to the legacy path, a shim until
 
 ## How it works
 
-```mermaid
-flowchart LR
-    W["Claude writes a<br/>fallback / shim / flag"] -->|PostToolUse hook| N{dated?}
-    N -- no --> P["nudge: propose<br/>EXPIRES marker"]
-    P --> U(["you confirm the date"])
-    U --> M["EXPIRES: 2026-12-31 ..."]
-    N -- yes --> M
-    M -->|SessionStart hook| S["overdue / due soon<br/>shown every session"]
-    S -->|"expiry reap"| R["reaper agent<br/>proposes removal diff"]
-    R --> U2(["you approve"]) --> D["code gone"]
-    A["expiry audit"] -->|existing repo| P
-```
+![How code-expiry works: Claude writes temp code, a dated marker is added with your confirmation, due items show at session start, the reaper removes them on command with your approval](docs/how-it-works.svg)
 
 Four moments, one marker.
 
