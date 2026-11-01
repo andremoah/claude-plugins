@@ -1,0 +1,7 @@
+{
+  "name": "code-expiry",
+  "version": "0.1.0",
+  "description": "Track temporary code with EXPIRES markers: surfaces overdue fallbacks, flags and shims at session start, nudges Claude to date the temp code it writes, and removes it on command.",
+  "author": { "name": "André Mota" },
+  "keywords": ["tech-debt", "feature-flags", "todo", "cleanup", "hooks"]
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="356" viewBox="0 0 760 356" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="13">
+  <rect width="760" height="356" rx="10" fill="#0d1117"/>
+  <rect width="760" height="32" rx="10" fill="#161b22"/>
+  <rect y="22" width="760" height="10" fill="#161b22"/>
+  <circle cx="18" cy="16" r="6" fill="#ff5f57"/><circle cx="38" cy="16" r="6" fill="#febc2e"/><circle cx="58" cy="16" r="6" fill="#28c840"/>
+  <text x="380" y="21" text-anchor="middle" fill="#8b949e" font-size="12">claude — removing an expired block</text>
+  <text x="20" y="58" fill="#7ee787">&gt; /code-expiry:expiry reap src/Jobs/JobRunConsumer.cs:88</text>
+  <text x="20" y="86" fill="#a371f7">● reaper agent</text>
+  <text x="20" y="108" fill="#c9d1d9">Marker guards the pre-heartbeat branch. Condition: "Released stays 0". <tspan fill="#d29922">Runtime metric,</tspan></text>
+  <text x="20" y="126" fill="#d29922">cannot verify from code. Please confirm it before I apply.</tspan> No other references to the branch.</text>
+  <rect x="20" y="140" width="720" height="150" rx="4" fill="#161b22"/>
+  <text x="32" y="160" fill="#8b949e">--- a/src/Jobs/JobRunConsumer.cs</text>
+  <text x="32" y="178" fill="#8b949e">+++ b/src/Jobs/JobRunConsumer.cs</text>
+  <text x="32" y="196" fill="#79c0ff">@@ -86,12 +86,6 @@</text>
+  <text x="32" y="214" fill="#f85149">-        // EXPIRES: 2026-09-13 legacy pre-heartbeat fallback; delete once Released stays 0</text>
+  <text x="32" y="232" fill="#f85149">-        if (job.Heartbeat is null)</text>
+  <text x="32" y="250" fill="#f85149">-        {</text>
+  <text x="32" y="268" fill="#f85149">-            await ReleaseLegacyAsync(job, ct);   // ... 4 more removed lines</text>
+  <text x="32" y="286" fill="#c9d1d9">         await ProcessAsync(job, ct);</text>
+  <text x="20" y="316" fill="#c9d1d9">Also removes <tspan fill="#79c0ff">ReleaseLegacyAsync</tspan> (only caller) and its test. Verify with <tspan fill="#7ee787">dotnet build</tspan>.</text>
+  <text x="20" y="338" fill="#c9d1d9">Apply? <tspan fill="#8b949e">(nothing is changed until you say yes)</tspan></text>
+</svg>

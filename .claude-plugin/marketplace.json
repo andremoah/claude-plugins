@@ -1,0 +1,12 @@
+{
+  "name": "andremoah-plugins",
+  "owner": { "name": "André Mota", "url": "https://github.com/andremoah" },
+  "description": "Claude Code plugins by André Mota: tooling that closes loops AI-assisted coding leaves open.",
+  "plugins": [
+    {
+      "name": "code-expiry",
+      "source": "./code-expiry",
+      "description": "Temporary code with an expiry date: date, surface and remove fallbacks, flags and shims from inside Claude Code."
+    }
+  ]
+}
