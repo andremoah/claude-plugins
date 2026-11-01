@@ -30,8 +30,8 @@ Four moments, one marker.
 One comment line directly above the temporary block. Any language, any comment syntax.
 
 ```csharp
-// EXPIRES: 2026-09-13 legacy pre-heartbeat fallback; delete once Released stays 0 in prod for 30d
-if (job.Heartbeat is null) { ... }
+// EXPIRES: 2026-09-13 legacy polling fallback; delete once webhook delivery stays at 100% for 30d
+if (invoice.WebhookId is null) { ... }
 ```
 
 The date is ISO. The rest says why it is temporary and what must be true to delete it. Also accepted: `EXPIRES(2026-09-13)`, `@expires(2026-09-13)`, and `TODO [2026-09-13]` (eslint-plugin-unicorn style).

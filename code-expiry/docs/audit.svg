@@ -1,17 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="13">
-  <rect width="760" height="330" rx="10" fill="#0d1117"/>
-  <rect width="760" height="32" rx="10" fill="#161b22"/>
-  <rect y="22" width="760" height="10" fill="#161b22"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="330" viewBox="0 0 920 330" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="13">
+  <rect width="920" height="330" rx="10" fill="#0d1117"/>
+  <rect width="920" height="32" rx="10" fill="#161b22"/>
+  <rect y="22" width="920" height="10" fill="#161b22"/>
   <circle cx="18" cy="16" r="6" fill="#ff5f57"/><circle cx="38" cy="16" r="6" fill="#febc2e"/><circle cx="58" cy="16" r="6" fill="#28c840"/>
-  <text x="380" y="21" text-anchor="middle" fill="#8b949e" font-size="12">claude — first run on an existing repo</text>
-  <text x="20" y="58" fill="#7ee787">&gt; /code-expiry:expiry audit src/Backoffice.Api/Areas/System</text>
-  <text x="20" y="86" fill="#c9d1d9">code-expiry: <tspan fill="#d29922">4 undated candidate(s)</tspan> under src/Backoffice.Api/Areas/System, oldest first.</text>
+  <text x="460" y="21" text-anchor="middle" fill="#8b949e" font-size="12">claude — first run on an existing repo</text>
+  <text x="20" y="58" fill="#7ee787">&gt; /code-expiry:expiry audit src/Orders.Api/Payments</text>
+  <text x="20" y="86" fill="#c9d1d9">code-expiry: <tspan fill="#d29922">4 undated candidate(s)</tspan> under src/Orders.Api/Payments, oldest first.</text>
   <text x="20" y="118" fill="#a371f7">● Claude</text>
   <text x="20" y="140" fill="#8b949e">  #  age    location                              comment                               proposal</text>
-  <line x1="20" y1="148" x2="740" y2="148" stroke="#30363d"/>
-  <text x="20" y="168" fill="#c9d1d9">  1  <tspan fill="#f85149">191d</tspan>  <tspan fill="#79c0ff">Services/KongAdminClient.cs:207</tspan>   fall through to Kong Admin fallback   <tspan fill="#d29922">permanent?</tspan> design, not temp</text>
-  <text x="20" y="190" fill="#c9d1d9">  2  <tspan fill="#f85149">177d</tspan>  <tspan fill="#79c0ff">Services/GatewaySync.cs:61</tspan>        TODO remove after gateway v2 rollout   <tspan fill="#7ee787">mark</tspan> EXPIRES: 2026-12-31</text>
-  <text x="20" y="212" fill="#c9d1d9">  3  <tspan fill="#d29922"> 98d</tspan>  <tspan fill="#79c0ff">Jobs/RetryShim.cs:12</tspan>              HACK workaround until Polly 9 fix      <tspan fill="#7ee787">mark</tspan> EXPIRES: 2027-02-01</text>
+  <line x1="20" y1="148" x2="900" y2="148" stroke="#30363d"/>
+  <text x="20" y="168" fill="#c9d1d9">  1  <tspan fill="#f85149">191d</tspan>  <tspan fill="#79c0ff">Clients/PspClient.cs:207</tspan>   fall through to PSP sandbox fallback   <tspan fill="#d29922">permanent?</tspan> design, not temp</text>
+  <text x="20" y="190" fill="#c9d1d9">  2  <tspan fill="#f85149">177d</tspan>  <tspan fill="#79c0ff">Services/RefundSync.cs:61</tspan>        TODO remove after refunds v2 rollout   <tspan fill="#7ee787">mark</tspan> EXPIRES: 2026-12-31</text>
+  <text x="20" y="212" fill="#c9d1d9">  3  <tspan fill="#d29922"> 98d</tspan>  <tspan fill="#79c0ff">Jobs/RetryShim.cs:12</tspan>              HACK workaround until SDK 9 fix         <tspan fill="#7ee787">mark</tspan> EXPIRES: 2027-02-01</text>
   <text x="20" y="234" fill="#c9d1d9">  4  <tspan fill="#d29922"> 40d</tspan>  <tspan fill="#79c0ff">Config/FeatureFlags.cs:33</tspan>         kill switch for new scheduler          <tspan fill="#7ee787">mark</tspan> EXPIRES: 2026-12-01</text>
   <text x="20" y="270" fill="#c9d1d9">Confirm per item (<tspan fill="#7ee787">y</tspan> / <tspan fill="#d29922">p</tspan>ermanent / <tspan fill="#f85149">d</tspan>elete now / new date), or <tspan fill="#7ee787">accept all</tspan>.</text>
   <text x="20" y="292" fill="#c9d1d9">Permanent items go to <tspan fill="#79c0ff">.code-expiry-ignore</tspan> and never resurface. No date is written</text>

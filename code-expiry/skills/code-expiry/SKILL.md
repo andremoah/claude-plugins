@@ -8,7 +8,7 @@ description: How to date temporary code with EXPIRES markers so it gets removed 
 Temporary code without a deadline becomes permanent. Whenever you write code that exists only until something else happens, put an `EXPIRES` marker on its comment line:
 
 ```
-// EXPIRES: 2026-09-13 legacy pre-heartbeat fallback; delete once Released stays 0 in prod for 30d
+// EXPIRES: 2026-09-13 legacy polling fallback; delete once webhook delivery stays at 100% for 30d
 ```
 
 Rules:
