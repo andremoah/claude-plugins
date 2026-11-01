@@ -15,6 +15,11 @@
       "name": "feature-estimate",
       "source": "./feature-estimate",
       "description": "Impact map, risk flags and tiered effort estimate for a feature; guided setup builds an architecture map of your repos first."
+    },
+    {
+      "name": "readme-sync",
+      "source": "./readme-sync",
+      "description": "Keeps the functional README true to the code: maps sections to paths, flags stale sections, drafts the edit, fails CI on request."
     }
   ]
 }

@@ -1,0 +1,7 @@
+{
+  "name": "readme-sync",
+  "version": "0.1.0",
+  "description": "Keeps the functional README honest: maps README sections to the code paths that make them true, flags a section as stale when its code changes and the README does not, proposes the edit, and fails CI if you want it to.",
+  "author": { "name": "André Mota" },
+  "keywords": ["documentation", "readme", "drift", "hooks", "ci", "developer-portal"]
+}

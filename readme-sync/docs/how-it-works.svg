@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8b949e"/></marker></defs>
+  <rect width="1200" height="440" rx="12" fill="#0d1117"/>
+  <text x="40" y="52" fill="#e6edf3" font-size="20" font-weight="700">readme-sync</text>
+  <text x="190" y="52" fill="#8b949e" font-size="14">each README section is backed by the code paths that make it true</text>
+
+  <!-- left: mapping -->
+  <rect x="40" y="90" width="330" height="300" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="60" y="120" fill="#e6edf3" font-size="15" font-weight="600">.readme-sync</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12.5">
+    <text x="60" y="150" fill="#58a6ff">[Main operations]</text>
+    <text x="60" y="168" fill="#c9d1d9">src/*/Controllers/*</text>
+    <text x="60" y="186" fill="#c9d1d9">src/*/Mutations/*</text>
+    <text x="60" y="214" fill="#58a6ff">[Data]</text>
+    <text x="60" y="232" fill="#c9d1d9">src/*/Dtos/*</text>
+    <text x="60" y="250" fill="#c9d1d9">src/*/Migrations/*</text>
+    <text x="60" y="278" fill="#58a6ff">[Depends on]</text>
+    <text x="60" y="296" fill="#c9d1d9">src/*/Clients/*</text>
+    <text x="60" y="324" fill="#58a6ff">[Settings]</text>
+    <text x="60" y="342" fill="#c9d1d9">appsettings*.json</text>
+  </g>
+  <text x="60" y="376" fill="#8b949e" font-size="12">no file? built-in conventions apply</text>
+
+  <line x1="372" y1="240" x2="438" y2="240" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- middle: diff -->
+  <rect x="440" y="90" width="330" height="300" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="460" y="120" fill="#e6edf3" font-size="15" font-weight="600">git diff main..HEAD</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12.5">
+    <text x="460" y="150" fill="#3fb950">M  src/Api/Controllers/OrdersController.cs</text>
+    <text x="460" y="168" fill="#3fb950">A  src/Api/Dtos/OrderExportDto.cs</text>
+    <text x="460" y="186" fill="#8b949e">M  src/Api/Services/ExportService.cs</text>
+    <text x="460" y="204" fill="#8b949e">M  tests/OrdersTests.cs</text>
+    <text x="460" y="240" fill="#f85149">README.md  unchanged</text>
+  </g>
+  <text x="460" y="290" fill="#c9d1d9" font-size="13">PostToolUse hook: one nudge per section</text>
+  <text x="460" y="310" fill="#c9d1d9" font-size="13">while the change is being written</text>
+  <text x="460" y="340" fill="#c9d1d9" font-size="13">/readme-sync check · apply · ci</text>
+  <text x="460" y="360" fill="#c9d1d9" font-size="13">before the PR, or in the pipeline</text>
+
+  <line x1="772" y1="240" x2="838" y2="240" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- right: result -->
+  <rect x="840" y="90" width="320" height="300" rx="10" fill="#161b22" stroke="#3fb950" stroke-width="1.5"/>
+  <text x="860" y="120" fill="#e6edf3" font-size="15" font-weight="600">per section</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12.5">
+    <text x="860" y="152" fill="#c9d1d9">Main operations</text><text x="1060" y="152" fill="#f85149" font-weight="700">STALE</text>
+    <text x="860" y="172" fill="#c9d1d9">Data</text><text x="1060" y="172" fill="#f85149" font-weight="700">STALE</text>
+    <text x="860" y="192" fill="#c9d1d9">Depends on</text><text x="1060" y="192" fill="#8b949e">ok</text>
+    <text x="860" y="212" fill="#c9d1d9">Settings</text><text x="1060" y="212" fill="#8b949e">ok</text>
+  </g>
+  <text x="860" y="256" fill="#c9d1d9" font-size="13">apply → drafts the minimal edit</text>
+  <text x="860" y="276" fill="#c9d1d9" font-size="13">from the diff, what and why, no how.</text>
+  <text x="860" y="296" fill="#c9d1d9" font-size="13">Shown as a diff. Applied on your yes.</text>
+  <text x="860" y="330" fill="#c9d1d9" font-size="13">--ci → exit 1 while a section is stale</text>
+  <text x="860" y="366" fill="#3fb950" font-size="12">never writes on its own · never invents</text>
+</svg>
