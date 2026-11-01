@@ -1,0 +1,7 @@
+{
+  "name": "feature-estimate",
+  "version": "0.1.0",
+  "description": "Scope a feature before committing to a date: guided setup maps your repos and dependencies, then each estimate returns an impact map, risk flags, open questions and a size calibrated to your team's history.",
+  "author": { "name": "André Mota" },
+  "keywords": ["estimation", "scoping", "impact-analysis", "architecture", "tech-lead"]
+}

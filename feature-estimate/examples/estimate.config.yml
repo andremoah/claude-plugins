@@ -1,0 +1,34 @@
+# Copy to <workspace>/estimate.config.yml and edit.
+# Written by /feature-estimate:init alongside architecture.md. `repos` is the universe
+# the estimator may search, not the set a given feature touches.
+
+repos:
+  - path: ./api            # local clone, or
+    role: api
+  - url: https://github.com/org/web   # shallow-cloned on demand (v2)
+    role: ui
+
+# provider -> dependents. A change in the key marks the values "at risk".
+dependencies:
+  shared-lib: [api, web]
+  api: [web]
+
+# Project-specific risk flags. `when` is guidance for the model, not code.
+risk_flags:
+  - name: public-contract
+    when: an exported API, event payload or shared type changes shape
+    why: consumers break; coordinated release
+
+# Assignee multipliers: experience x familiarity, applied after the base size.
+multipliers:
+  experience: { senior: 0.8, mid: 1.0, junior: 1.5 }
+  familiarity: { owner: 1.0, some: 1.2, new: 1.6 }
+  flag_penalties:            # added to junior/new multiplier when flag raised
+    framework-change: 0.4
+    migration: 0.3
+    contract-change: 0.2
+
+# Calibration. Unit must be consistent across references.
+unit: days                   # days | points
+reference_max_age_days: 365
+references_file: ./references.yml   # produced by build-references, or hand-written

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8b949e"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="460" rx="12" fill="#0d1117"/>
+
+  <text x="40" y="52" fill="#e6edf3" font-size="20" font-weight="700">feature-estimate</text>
+  <text x="220" y="52" fill="#8b949e" font-size="14">once: map the system · per feature: scope it, then size it</text>
+
+  <g font-size="12" font-weight="700" fill="#0d1117">
+    <circle cx="60" cy="88" r="12" fill="#58a6ff"/><text x="60" y="92.5" text-anchor="middle">1</text>
+    <circle cx="360" cy="88" r="12" fill="#58a6ff"/><text x="360" y="92.5" text-anchor="middle">2</text>
+    <circle cx="660" cy="88" r="12" fill="#58a6ff"/><text x="660" y="92.5" text-anchor="middle">3</text>
+    <circle cx="960" cy="88" r="12" fill="#58a6ff"/><text x="960" y="92.5" text-anchor="middle">4</text>
+  </g>
+
+  <!-- 1 init -->
+  <rect x="40" y="110" width="220" height="190" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="150" y="142" text-anchor="middle" fill="#e6edf3" font-size="17" font-weight="600">/feature-estimate:init</text>
+  <text x="150" y="168" text-anchor="middle" fill="#8b949e" font-size="13">~10 min, once per team</text>
+  <text x="60" y="200" fill="#c9d1d9" font-size="13">• repos it may search</text>
+  <text x="60" y="222" fill="#c9d1d9" font-size="13">• roles + dependencies</text>
+  <text x="60" y="244" fill="#c9d1d9" font-size="13">• shared data, delivery scope</text>
+  <text x="60" y="266" fill="#c9d1d9" font-size="13">• known traps, team</text>
+  <text x="150" y="292" text-anchor="middle" fill="#58a6ff" font-size="12" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">architecture.md</text>
+
+  <line x1="262" y1="205" x2="338" y2="205" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 2 spec -->
+  <rect x="340" y="110" width="220" height="190" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="450" y="142" text-anchor="middle" fill="#e6edf3" font-size="17" font-weight="600">Feed a feature</text>
+  <text x="450" y="168" text-anchor="middle" fill="#8b949e" font-size="13">any shape you have</text>
+  <text x="360" y="200" fill="#c9d1d9" font-size="13">• ticket link (Jira, GitHub, …)</text>
+  <text x="360" y="222" fill="#c9d1d9" font-size="13">• spec.md</text>
+  <text x="360" y="244" fill="#c9d1d9" font-size="13">• one sentence</text>
+  <text x="360" y="266" fill="#c9d1d9" font-size="13">• optional: assignee profile</text>
+  <text x="450" y="292" text-anchor="middle" fill="#58a6ff" font-size="12" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">/feature-estimate PROJ-123</text>
+
+  <line x1="562" y1="205" x2="638" y2="205" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 3 narrow -->
+  <rect x="640" y="110" width="220" height="190" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="750" y="142" text-anchor="middle" fill="#e6edf3" font-size="17" font-weight="600">Narrow, then ripple</text>
+  <text x="750" y="168" text-anchor="middle" fill="#8b949e" font-size="13">reads code, not the ticket's guess</text>
+  <text x="660" y="200" fill="#c9d1d9" font-size="13">• find entry points in the universe</text>
+  <text x="660" y="222" fill="#c9d1d9" font-size="13">• follow dependencies outward</text>
+  <text x="660" y="244" fill="#c9d1d9" font-size="13">• new · modified · at risk</text>
+  <text x="660" y="266" fill="#c9d1d9" font-size="13">• list what it did not inspect</text>
+
+  <line x1="862" y1="205" x2="938" y2="205" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 4 report -->
+  <rect x="940" y="110" width="220" height="190" rx="10" fill="#161b22" stroke="#3fb950" stroke-width="1.5"/>
+  <text x="1050" y="142" text-anchor="middle" fill="#e6edf3" font-size="17" font-weight="600">Report for the lead</text>
+  <text x="1050" y="168" text-anchor="middle" fill="#8b949e" font-size="13">decide: estimate · ask · split</text>
+  <text x="960" y="200" fill="#c9d1d9" font-size="13">• TL;DR, impact map</text>
+  <text x="960" y="222" fill="#c9d1d9" font-size="13">• risk flags, open questions</text>
+  <text x="960" y="244" fill="#c9d1d9" font-size="13">• size at the tier earned</text>
+  <text x="960" y="266" fill="#c9d1d9" font-size="13">• what would raise confidence</text>
+  <text x="1050" y="292" text-anchor="middle" fill="#3fb950" font-size="12" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">estimates/PROJ-123.md</text>
+
+  <!-- tiers -->
+  <text x="40" y="350" fill="#8b949e" font-size="13" font-weight="600">Confidence tiers — the size never claims more than the inputs earn</text>
+  <g font-size="13">
+    <rect x="40" y="366" width="260" height="58" rx="8" fill="#161b22" stroke="#30363d"/>
+    <text x="56" y="390" fill="#e6edf3" font-weight="600">T0 · spec only</text>
+    <text x="56" y="410" fill="#8b949e">impact sketch + questions, no size</text>
+    <rect x="320" y="366" width="260" height="58" rx="8" fill="#161b22" stroke="#30363d"/>
+    <text x="336" y="390" fill="#e6edf3" font-weight="600">T1 · + repos</text>
+    <text x="336" y="410" fill="#8b949e">files, ripple, S / M / L / XL</text>
+    <rect x="600" y="366" width="260" height="58" rx="8" fill="#161b22" stroke="#30363d"/>
+    <text x="616" y="390" fill="#e6edf3" font-weight="600">T2 · + database / schema</text>
+    <text x="616" y="410" fill="#8b949e">+ data and migration risk</text>
+    <rect x="880" y="366" width="280" height="58" rx="8" fill="#161b22" stroke="#3fb950"/>
+    <text x="896" y="390" fill="#e6edf3" font-weight="600">T3 · + past tickets with actuals</text>
+    <text x="896" y="410" fill="#8b949e">calibrated range in days or points</text>
+  </g>
+</svg>

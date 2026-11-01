@@ -1,0 +1,20 @@
+# One entry per past ticket. `actual` + `source` are optional: without them the
+# entry is shape-only (used for sizing, not calibration).
+- id: PROJ-123
+  title: Add export button to orders list
+  actual: 2
+  source: logged          # logged | points | cycle-time
+  repos: [web]
+  changes: [new, modified]
+  flags: []
+  assignee: { experience: mid, familiarity: owner }
+  date: 2026-09-14
+- id: PROJ-140
+  title: Rename customer.status enum across services
+  actual: 6
+  source: cycle-time
+  repos: [shared-lib, api, web]
+  changes: [modified, contract-change, migration]
+  flags: [public-contract, migration]
+  assignee: { experience: senior, familiarity: owner }
+  date: 2026-08-02

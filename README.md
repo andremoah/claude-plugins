@@ -9,6 +9,7 @@ Claude Code plugins by [André Mota](https://github.com/andremoah). Each folder 
 | Plugin | What it does |
 |---|---|
 | [code-expiry](code-expiry/) | Temporary code with an expiry date. Dates fallbacks, flags and shims when Claude writes them, surfaces them at session start when due, removes them on command. |
+| [feature-estimate](feature-estimate/) | Scopes a feature before anyone commits to a date. Guided setup maps your repos and dependencies; each estimate returns an impact map, risk flags, open questions and a size calibrated to your team's history when available. |
 
 ## Developing locally
 
