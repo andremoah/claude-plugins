@@ -12,15 +12,15 @@ AI agents write temporary code fast. A fallback to the legacy path, a shim until
 
 ```mermaid
 flowchart LR
-    W[Claude writes a<br/>fallback / shim / flag] -->|PostToolUse hook| N{dated?}
-    N -- no --> P[nudge: propose<br/>EXPIRES marker]
-    P --> U([you confirm the date])
-    U --> M[// EXPIRES: 2026-12-31 ...]
+    W["Claude writes a<br/>fallback / shim / flag"] -->|PostToolUse hook| N{dated?}
+    N -- no --> P["nudge: propose<br/>EXPIRES marker"]
+    P --> U(["you confirm the date"])
+    U --> M["EXPIRES: 2026-12-31 ..."]
     N -- yes --> M
-    M -->|SessionStart hook| S[overdue / due soon<br/>shown every session]
-    S -->|/code-expiry:expiry reap| R[reaper agent<br/>proposes removal diff]
-    R --> U2([you approve]) --> D[code gone]
-    A[/code-expiry:expiry audit/] -->|existing repo| P
+    M -->|SessionStart hook| S["overdue / due soon<br/>shown every session"]
+    S -->|"expiry reap"| R["reaper agent<br/>proposes removal diff"]
+    R --> U2(["you approve"]) --> D["code gone"]
+    A["expiry audit"] -->|existing repo| P
 ```
 
 Four moments, one marker.
