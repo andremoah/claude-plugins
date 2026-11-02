@@ -20,6 +20,11 @@
       "name": "readme-sync",
       "source": "./readme-sync",
       "description": "Keeps the functional README true to the code: maps sections to paths, flags stale sections, drafts the edit, fails CI on request."
+    },
+    {
+      "name": "legacy-spec",
+      "source": "./legacy-spec",
+      "description": "Spec an undocumented legacy system one context-sized unit at a time: cited rules, data model, glossary and open questions, progress kept on disk."
     }
   ]
 }

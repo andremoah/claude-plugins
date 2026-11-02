@@ -1,0 +1,7 @@
+{
+  "name": "legacy-spec",
+  "version": "0.1.0",
+  "description": "Turns an undocumented legacy system into a validatable spec, one unit at a time: inventories the source, splits it into context-sized units, writes one cited spec file per unit to disk, tracks progress so any session can resume, and assembles the whole into a tree map, data model and open questions.",
+  "author": { "name": "André Mota" },
+  "keywords": ["legacy", "reverse-engineering", "specification", "documentation", "modernisation", "archaeology"]
+}
