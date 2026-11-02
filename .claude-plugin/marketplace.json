@@ -17,14 +17,19 @@
       "description": "Impact map, risk flags and tiered effort estimate for a feature; guided setup builds an architecture map of your repos first."
     },
     {
+      "name": "legacy-spec",
+      "source": "./legacy-spec",
+      "description": "Spec an undocumented legacy system one context-sized unit at a time: cited rules, data model, glossary and open questions, progress kept on disk."
+    },
+    {
       "name": "readme-sync",
       "source": "./readme-sync",
       "description": "Keeps the functional README true to the code: maps sections to paths, flags stale sections, drafts the edit, fails CI on request."
     },
     {
-      "name": "legacy-spec",
-      "source": "./legacy-spec",
-      "description": "Spec an undocumented legacy system one context-sized unit at a time: cited rules, data model, glossary and open questions, progress kept on disk."
+      "name": "tuneup",
+      "source": "./tuneup",
+      "description": "Tunes a Claude Code setup for token cost and accuracy from local usage data: measures, inventories, recommends community tools and rules with trade-offs, applies on approval, rechecks."
     }
   ]
 }

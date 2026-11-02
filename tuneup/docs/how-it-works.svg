@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="560" viewBox="0 0 1120 560" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5">
+  <defs>
+    <marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#c9d1d9"/></marker>
+    <marker id="arb" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#d29922"/></marker>
+  </defs>
+  <rect width="1120" height="560" fill="#0d1117"/>
+
+  <text x="20" y="32" font-size="21" font-weight="700" fill="#e6edf3">tuneup · your usage data → a setup that costs less and errs less</text>
+  <text x="20" y="54" font-size="12.5" fill="#8b949e">measure first · every recommendation carries its token effect, accuracy effect and risk · nothing changes until you say yes</text>
+
+  <text x="20"  y="92" font-size="11" font-weight="700" fill="#8b949e" letter-spacing="1">MEASURE · LOCAL ONLY</text>
+  <text x="330" y="92" font-size="11" font-weight="700" fill="#8b949e" letter-spacing="1">MATCH</text>
+  <text x="600" y="92" font-size="11" font-weight="700" fill="#8b949e" letter-spacing="1">REPORT</text>
+  <text x="900" y="92" font-size="11" font-weight="700" fill="#8b949e" letter-spacing="1">LOOP</text>
+
+  <!-- MEASURE column -->
+  <g>
+    <rect x="20" y="104" width="280" height="96" rx="6" fill="#161b22" stroke="#30363d"/>
+    <text x="32" y="126" font-weight="700" fill="#e6edf3">usage.py · transcripts, 14 days</text>
+    <text x="32" y="146" fill="#c9d1d9">tokens in/out · cache hit · compactions</text>
+    <text x="32" y="164" fill="#c9d1d9">bytes per tool · repeated reads · results &gt;20 KB</text>
+    <text x="32" y="182" fill="#8b949e">counts and sizes only, never content</text>
+
+    <rect x="20" y="214" width="280" height="78" rx="6" fill="#161b22" stroke="#30363d"/>
+    <text x="32" y="236" font-weight="700" fill="#e6edf3">setup.sh · what loads every request</text>
+    <text x="32" y="256" fill="#c9d1d9">model · hooks · plugins · MCP servers</text>
+    <text x="32" y="274" fill="#c9d1d9">permissions · CLAUDE.md sizes · skills</text>
+
+    <rect x="20" y="306" width="280" height="60" rx="6" fill="#161b22" stroke="#30363d"/>
+    <text x="32" y="328" font-weight="700" fill="#e6edf3">stack.sh · your repos</text>
+    <text x="32" y="348" fill="#c9d1d9">languages, frameworks → LSP and plugin hints</text>
+  </g>
+
+  <!-- arrows to MATCH -->
+  <path d="M300,152 L330,152 L330,235 L350,235" fill="none" stroke="#c9d1d9" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M300,253 L350,253" fill="none" stroke="#c9d1d9" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M300,336 L330,336 L330,271 L350,271" fill="none" stroke="#c9d1d9" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <!-- MATCH -->
+  <g>
+    <rect x="350" y="180" width="220" height="146" rx="6" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
+    <text x="362" y="204" font-weight="700" fill="#e6edf3">catalog · 16 optimisations</text>
+    <text x="362" y="226" fill="#c9d1d9">each entry has a signal:</text>
+    <text x="362" y="244" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5">Bash ≥ 25% of bytes → rtk</text>
+    <text x="362" y="260" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5">grep top command + C# → LSP</text>
+    <text x="362" y="276" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5">repeated reads ≥ 20 → rules</text>
+    <text x="362" y="300" fill="#c9d1d9">signal fires → kept · already in place → dropped</text>
+    <text x="362" y="316" fill="#c9d1d9">no number → not recommended</text>
+  </g>
+
+  <path d="M570,253 L620,253" fill="none" stroke="#c9d1d9" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <!-- REPORT -->
+  <g>
+    <rect x="620" y="104" width="260" height="300" rx="6" fill="#161b22" stroke="#30363d"/>
+    <text x="632" y="126" font-weight="700" fill="#e6edf3">~/.claude/tuneup/report-&lt;date&gt;.md</text>
+    <text x="632" y="146" fill="#8b949e">baseline table · what loads every request</text>
+
+    <rect x="632" y="160" width="236" height="64" rx="4" fill="#0d1117" stroke="#3fb950"/>
+    <text x="642" y="178" font-weight="700" fill="#7ee787">DO</text>
+    <text x="642" y="196" fill="#c9d1d9">tokens ↓ · accuracy = or ↑ · low risk</text>
+    <text x="642" y="212" fill="#8b949e">LSP plugin · token-budget rules · idle MCP off</text>
+
+    <rect x="632" y="234" width="236" height="64" rx="4" fill="#0d1117" stroke="#d29922"/>
+    <text x="642" y="252" font-weight="700" fill="#e3b341">CONSIDER</text>
+    <text x="642" y="270" fill="#c9d1d9">a trade, stated: tokens ↓ but accuracy ↓</text>
+    <text x="642" y="286" fill="#8b949e">verify on request · caveman · smaller model</text>
+
+    <rect x="632" y="308" width="236" height="48" rx="4" fill="#0d1117" stroke="#30363d"/>
+    <text x="642" y="326" font-weight="700" fill="#8b949e">SKIP FOR YOU</text>
+    <text x="642" y="344" fill="#8b949e">popular advice your numbers do not support</text>
+
+    <text x="632" y="378" fill="#c9d1d9">per item: evidence · tokens · accuracy · risk</text>
+    <text x="632" y="394" fill="#c9d1d9">apply step · source link</text>
+  </g>
+
+  <!-- LOOP -->
+  <g>
+    <rect x="900" y="150" width="200" height="60" rx="6" fill="#161b22" stroke="#30363d"/>
+    <text x="912" y="172" font-weight="700" fill="#e6edf3">apply &lt;id&gt;</text>
+    <text x="912" y="192" fill="#c9d1d9">shows the diff · waits for yes</text>
+
+    <rect x="900" y="250" width="200" height="60" rx="6" fill="#161b22" stroke="#30363d"/>
+    <text x="912" y="272" font-weight="700" fill="#e6edf3">one week of work</text>
+    <text x="912" y="292" fill="#c9d1d9">same projects, same you</text>
+
+    <rect x="900" y="350" width="200" height="60" rx="6" fill="#161b22" stroke="#d29922" stroke-width="1.5"/>
+    <text x="912" y="372" font-weight="700" fill="#e6edf3">recheck</text>
+    <text x="912" y="392" fill="#c9d1d9">after vs baseline · per metric, per tool</text>
+  </g>
+  <path d="M880,180 L900,180" fill="none" stroke="#c9d1d9" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M1000,210 L1000,250" fill="none" stroke="#c9d1d9" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M1000,310 L1000,350" fill="none" stroke="#c9d1d9" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M900,380 L890,380 L890,430 L160,430 L160,366" fill="none" stroke="#d29922" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arb)"/>
+  <text x="400" y="446" fill="#e3b341" font-size="11.5">fewer tokens per session? repeated reads down? accuracy held? → next scan starts from the new baseline</text>
+
+  <!-- command strip -->
+  <rect x="20" y="478" width="1080" height="62" rx="6" fill="#161b22" stroke="#30363d"/>
+  <text x="32" y="500" font-weight="700" fill="#e6edf3" font-size="12">commands</text>
+  <text x="32" y="524" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">/tuneup scan   →   apply &lt;id&gt;   →   recheck        ·        catalog  (every optimisation, with its token and accuracy effect)</text>
+</svg>

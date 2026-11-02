@@ -1,0 +1,7 @@
+{
+  "name": "tuneup",
+  "version": "0.1.0",
+  "description": "Tunes your Claude Code setup for token cost and accuracy: measures your real usage from local transcripts, inventories settings, plugins, MCP servers and CLAUDE.md, detects your stack, and recommends community tools and rules with the token and accuracy trade-off stated for each. Applies on approval, re-measures a week later.",
+  "author": { "name": "André Mota" },
+  "keywords": ["tokens", "cost", "accuracy", "setup", "optimization", "claude-code", "hooks", "plugins"]
+}
